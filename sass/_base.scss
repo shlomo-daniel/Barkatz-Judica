@@ -1,0 +1,170 @@
+@use "variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&family=Crimson+Text:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-secondary;
+  font-weight: $font-regular;
+  line-height: 1.6;
+  color: $text-dark;
+  background-color: $primary-white;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition-medium;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: $transition-medium;
+}
+
+.container {
+  //   max-width: $large-desktop;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  @media (min-width: $tablet) {
+    padding: 0 $spacing-lg;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 $spacing-xl;
+  }
+}
+
+.section {
+  padding: $spacing-3xl 0;
+
+  @media (max-width: $tablet) {
+    padding: $spacing-2xl 0;
+  }
+}
+
+// Typography Classes
+.heading-primary {
+  font-family: $font-primary;
+  font-size: $font-5xl;
+  font-weight: $font-bold;
+  line-height: 1.2;
+  margin-bottom: $spacing-lg;
+
+  @media (max-width: $tablet) {
+    font-size: $font-4xl;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: $font-3xl;
+  }
+}
+
+.heading-secondary {
+  font-family: $font-primary;
+  font-size: $font-4xl;
+  font-weight: $font-semibold;
+  line-height: 1.3;
+  margin-bottom: $spacing-md;
+
+  @media (max-width: $tablet) {
+    font-size: $font-3xl;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: $font-2xl;
+  }
+}
+
+.heading-tertiary {
+  font-family: $font-primary;
+  font-size: $font-2xl;
+  font-weight: $font-medium;
+  line-height: 1.4;
+  margin-bottom: $spacing-sm;
+
+  @media (max-width: $mobile) {
+    font-size: $font-xl;
+  }
+}
+
+.text-body {
+  font-size: $font-base;
+  line-height: 1.7;
+  margin-bottom: $spacing-sm;
+}
+
+.text-large {
+  font-size: $font-lg;
+  line-height: 1.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gold {
+  color: $primary-gold;
+}
+
+.text-accent {
+  color: $accent-gold;
+}
+
+// Button Styles
+.btn {
+  display: inline-block;
+  padding: $spacing-sm $spacing-lg;
+  font-size: $font-base;
+  font-weight: $font-medium;
+  border-radius: $radius-sm;
+  transition: $transition-medium;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  &--primary {
+    background-color: $primary-gold;
+    color: $primary-white;
+    border-color: $primary-gold;
+
+    &:hover {
+      background-color: $accent-gold;
+      border-color: $accent-gold;
+      transform: translateY(-2px);
+      box-shadow: $shadow-medium;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $primary-gold;
+    border-color: $primary-gold;
+
+    &:hover {
+      background-color: $primary-gold;
+      color: $primary-white;
+      transform: translateY(-2px);
+      box-shadow: $shadow-medium;
+    }
+  }
+}

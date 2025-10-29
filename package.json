@@ -1,0 +1,22 @@
+{
+  "name": "barkatz-judica",
+  "version": "1.0.0",
+  "description": "Luxury Judaica website for BARKATZ",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass sass/main.scss public/css/main.css --watch",
+    "build-css": "sass sass/main.scss public/css/main.css --style compressed",
+    "serve": "live-server --port=3000"
+  },
+  "keywords": [
+    "judaica",
+    "luxury",
+    "handcrafted",
+    "religious-art"
+  ],
+  "author": "Gindi Web Solutions",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
