@@ -40,6 +40,7 @@ button {
 }
 
 .container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -128,7 +129,7 @@ button {
 }
 
 .text-gold {
-  color: #d4af37;
+  color: rgb(235, 199, 80);
 }
 
 .text-accent {
@@ -146,9 +147,9 @@ button {
   border: 2px solid transparent;
 }
 .btn--primary {
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
   color: #ffffff;
-  border-color: #d4af37;
+  border-color: rgb(235, 199, 80);
 }
 .btn--primary:hover {
   background-color: #b8941f;
@@ -158,11 +159,11 @@ button {
 }
 .btn--outline {
   background-color: transparent;
-  color: #d4af37;
-  border-color: #d4af37;
+  color: rgb(235, 199, 80);
+  border-color: rgb(235, 199, 80);
 }
 .btn--outline:hover {
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -197,15 +198,15 @@ button {
   padding: 0 1.5rem;
 }
 .hero__logo {
-  width: 300px;
+  max-width: 450px;
   height: auto;
-  margin-top: 6rem;
+  margin-top: 4rem;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.623));
   animation: fadeInDown 1s ease-out;
 }
 @media (max-width: 768px) {
   .hero__logo {
-    width: 120px;
+    max-width: 250px;
     margin-bottom: 2rem;
   }
 }
@@ -265,15 +266,30 @@ button {
 }
 .hero .hero-cta a {
   display: block;
-  border: 2px solid #d4af37;
+  border: 1px solid rgb(235, 199, 80);
   padding: 0.5em;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: transparent;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   font-size: 2.25rem;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1024px) {
+  .hero .hero-cta a {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-cta a {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero .hero-cta a {
+    font-size: 1.125rem;
+  }
 }
 .hero .hero-cta a:hover {
   border-color: #ffffff;
@@ -327,7 +343,7 @@ button {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
 }
 .products__subtitle {
   color: #666666;
@@ -433,7 +449,7 @@ button {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #d4af37;
+  color: rgb(235, 199, 80);
 }
 .product-card__price-currency {
   font-size: 1.125rem;
@@ -442,7 +458,7 @@ button {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -477,7 +493,7 @@ button {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
 }
 .highlights__subtitle {
   color: #666666;
@@ -510,11 +526,11 @@ button {
   background-color: #b8941f;
 }
 .highlight-card__icon {
-  width: 100px;
-  height: 100px;
+  width: 170px;
+  height: 170px;
   margin: 0 auto 2rem;
   border-radius: 50%;
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -522,8 +538,8 @@ button {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .highlight-card__icon img {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -609,7 +625,7 @@ button {
   left: -20px;
   right: 20px;
   bottom: 20px;
-  border: 3px solid #d4af37;
+  border: 3px solid rgb(235, 199, 80);
   z-index: -1;
   border-radius: 12px;
 }
@@ -658,7 +674,7 @@ button {
   }
 }
 .artist__section:first-child .artist__section-title {
-  color: #d4af37;
+  color: rgb(235, 199, 80);
 }
 .artist__section:last-child .artist__section-title {
   color: #b8941f;
@@ -717,7 +733,7 @@ button {
   font-weight: 600;
 }
 .artist__section-text em {
-  color: #d4af37;
+  color: rgb(235, 199, 80);
   font-style: italic;
 }
 
@@ -734,7 +750,7 @@ button {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, #d4af37 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgb(235, 199, 80) 50%, transparent 100%);
 }
 .footer__content {
   display: grid;
@@ -753,7 +769,7 @@ button {
   font-family: "Playfair Display", serif;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #d4af37;
+  color: rgb(235, 199, 80);
   margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
@@ -765,7 +781,7 @@ button {
   left: 0;
   width: 30px;
   height: 2px;
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
 }
 @media (max-width: 768px) {
   .footer__section-title::after {
@@ -785,7 +801,7 @@ button {
   transition: 0.2s ease;
 }
 .footer__section-content a:hover {
-  color: #d4af37;
+  color: rgb(235, 199, 80);
 }
 .footer__contact .contact-item {
   display: flex;
@@ -801,7 +817,7 @@ button {
   width: 16px;
   height: 16px;
   margin-right: 0.5rem;
-  color: #d4af37;
+  color: rgb(235, 199, 80);
 }
 .footer__contact .contact-item__text {
   font-size: 0.875rem;
@@ -819,7 +835,7 @@ button {
   transition: 0.2s ease;
 }
 .footer__policies .policy-links a:hover {
-  color: #d4af37;
+  color: rgb(235, 199, 80);
   text-decoration: none;
 }
 .footer__social .social-links {
@@ -842,7 +858,7 @@ button {
   transition: 0.3s ease;
 }
 .footer__social .social-links a:hover {
-  background-color: #d4af37;
+  background-color: rgb(235, 199, 80);
   transform: translateY(-2px);
 }
 .footer__social .social-links a svg {
@@ -873,7 +889,7 @@ button {
   color: #999999;
 }
 .footer__bottom-copyright .brand {
-  color: #d4af37;
+  color: rgb(235, 199, 80);
   font-weight: 600;
 }
 .footer__bottom-links {
@@ -894,7 +910,7 @@ button {
   transition: 0.2s ease;
 }
 .footer__bottom-links a:hover {
-  color: #d4af37;
+  color: rgb(235, 199, 80);
 }
 
 .fade-in {
