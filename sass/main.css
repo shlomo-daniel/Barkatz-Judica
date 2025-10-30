@@ -212,7 +212,7 @@ button {
 }
 @media (max-width: 480px) {
   .hero__logo {
-    width: 100px;
+    max-width: 190px;
   }
 }
 .hero__title {
